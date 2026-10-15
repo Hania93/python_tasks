@@ -1,0 +1,10 @@
+task_name = input("Nazwa zadania: ")
+estimated_time = int(input("Planowany czas (min): "))
+priority = int(input("Priorytet: (1-3): "))
+
+print(20*"=")
+print(f"KARTA ZADANIA: {task_name}")
+print(f"Czas: {estimated_time // 60} godz. {estimated_time % 60} min")
+print(f"Priorytet: {priority} | Pilne: ", end=" ")
+print("True") if priority >= 2 else print("False")
+print(20*"=")
